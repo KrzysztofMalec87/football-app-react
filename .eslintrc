@@ -5,6 +5,7 @@
   },
   "extends": [
     "airbnb",
+    "babel-eslint",
     "prettier",
     "prettier/react"
   ],
