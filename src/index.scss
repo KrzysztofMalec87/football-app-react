@@ -1,0 +1,13 @@
+@import './components/player/Player.scss';
+@import './components/ball/Ball.scss';
+
+html {
+  height: 100%;
+}
+
+body{
+  background: #000 url('assets/images/backgorund.jpg') no-repeat center center / cover  ;
+  min-height: 100%;
+  overflow: hidden;
+}
+
