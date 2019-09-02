@@ -1,5 +1,13 @@
 import React from 'react';
 
-const App = () => <h1>Hello Word</h1>;
+import Player from './components/player/Player';
+import Ball from './components/ball/Ball';
+
+const App = () => (
+  <>
+    <Player />
+    <Ball />
+  </>
+);
 
 export default App;
