@@ -3,13 +3,18 @@
     "browser": true,
     "node": true
   },
+  "plugins": [
+    "react"
+  ],
   "extends": [
     "airbnb",
-    "babel-eslint",
-    "prettier",
-    "prettier/react"
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "react-app"
   ],
+  "parser": "babel-eslint",
   "rules": {
+    "react/state-in-constructor": 0,
     "react/jsx-filename-extension": [
       1,
       {
