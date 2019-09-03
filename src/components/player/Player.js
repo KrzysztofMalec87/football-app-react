@@ -17,7 +17,7 @@ class Player extends Component {
 
     return (
       <SlideFromRight
-        animationDelay={200}
+        animationDelay={300}
         className="c-player"
         pose={active ? 'visible' : 'hidden'}
       >

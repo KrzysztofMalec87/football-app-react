@@ -17,7 +17,7 @@ class Ball extends Component {
 
     return (
       <SlideFromLeft
-        animationDelay={200}
+        animationDelay={400}
         className="c-ball"
         pose={active ? 'visible' : 'hidden'}
       >
