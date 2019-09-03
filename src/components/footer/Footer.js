@@ -15,7 +15,11 @@ class Footer extends Component {
     const { active } = this.state;
 
     return (
-      <FadeInTop className="c-footer" pose={active ? 'visible' : 'hidden'}>
+      <FadeInTop
+        animationDelay={500}
+        className="c-footer"
+        pose={active ? 'visible' : 'hidden'}
+      >
         <div className="c-footer__item">
           App created by <strong>Krzysztof Malec</strong>
         </div>
