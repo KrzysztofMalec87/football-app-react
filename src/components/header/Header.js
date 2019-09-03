@@ -17,7 +17,7 @@ class Header extends Component {
 
     return (
       <FadeInBottom
-        animationDelay={100}
+        animationDelay={300}
         className="c-header"
         pose={active ? 'visible' : 'hidden'}
       >

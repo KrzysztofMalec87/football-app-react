@@ -16,7 +16,7 @@ class Form extends Component {
 
     return (
       <FadeInTop
-        animationDelay={800}
+        animationDelay={600}
         className="c-form"
         pose={active ? 'visible' : 'hidden'}
       >

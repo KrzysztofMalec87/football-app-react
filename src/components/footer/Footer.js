@@ -16,7 +16,7 @@ class Footer extends Component {
 
     return (
       <FadeInTop
-        animationDelay={500}
+        animationDelay={400}
         className="c-footer"
         pose={active ? 'visible' : 'hidden'}
       >
