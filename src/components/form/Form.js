@@ -20,7 +20,7 @@ class Form extends Component {
         className="c-form"
         pose={active ? 'visible' : 'hidden'}
       >
-        <form classNanme="c-form">
+        <form>
           <select className="c-form__input" type="text">
             <option>Premier League</option>
             <option>Bundesliga</option>
