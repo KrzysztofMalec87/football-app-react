@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Header = () => <h1>Hello Word</h1>;
+import FadeInTop from '../../common/animations/FadeInTop';
+
+const Header = () => <FadeInTop className="container">smapl</FadeInTop>;
 
 export default Header;
