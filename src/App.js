@@ -1,19 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import Ball from './components/ball/Ball';
-import Header from './components/header/Header';
-import Player from './components/player/Player';
 import Footer from './components/footer/Footer';
-import Form from './components/form/Form';
+import Header from './components/header/Header';
+import RootView from './views/Root/RootView';
 
 const App = () => (
-  <>
-    <Header />
-    <Form />
-    <Player />
-    <Ball />
-    <Footer />
-  </>
+  <BrowserRouter>
+    <>
+      <Header />
+      <Route component={RootView} exact path="/" />
+      <Footer />
+    </>
+  </BrowserRouter>
 );
 
 export default App;
