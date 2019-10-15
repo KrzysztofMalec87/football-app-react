@@ -3,19 +3,21 @@
 @import './components/ball/Ball.scss';
 @import './components/header/Header.scss';
 @import './components/footer/Footer.scss';
+@import './components/countrylist/countrylink/CountryLink.scss';
 
 html {
   height: 100%;
 }
 
-body{
-  background: #000 url('assets/images/backgorund.jpg') no-repeat center center / cover  ;
+body {
+  background: #000 url('assets/images/backgorund.jpg') no-repeat center center /
+    cover;
   min-height: 100%;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
-.o-football-app{
+.o-football-app {
   position: relative;
   min-height: 100vh;
 }
