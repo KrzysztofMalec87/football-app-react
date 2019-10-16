@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { addCountries } from '../../actions';
 import CountryLink from './countrylink/CountryLink';
 import FadeInTop from '../../common/animations/FadeInTop';
 import fetchApi from '../../common/apiconnections';
+import { ALLOWED_COUNTRIES } from '../../common/constants';
+import { addCountries } from '../../actions';
 
 class LeagueList extends Component {
   state = {
@@ -12,9 +13,9 @@ class LeagueList extends Component {
   };
 
   componentDidMount() {
-    fetchApi(process.env.REACT_APP_API_URL_COUNTRIES).then(res => {
+    fetchApi(process.env.REACT_APP_API_URL_COUNTRIES).then(respond => {
       const { addCountries: addCountriesToState } = this.props;
-      const filteredCountries = this.filterCountries(res);
+      const filteredCountries = this.filterCountries(respond);
 
       addCountriesToState(filteredCountries);
 
@@ -23,26 +24,13 @@ class LeagueList extends Component {
   }
 
   filterCountries = ({ api }) => {
-    const allowedCountries = [
-      'Belgium',
-      'England',
-      'France',
-      'Germany',
-      'Poland',
-      'Spain',
-    ];
-    const newCountryList = [];
-    const { countries } = api;
+    let { countries } = api;
 
-    for (const iterator of countries) {
-      const countryName = iterator.country;
+    countries = countries.filter(value =>
+      ALLOWED_COUNTRIES.includes(value.country)
+    );
 
-      if (allowedCountries.includes(countryName)) {
-        newCountryList.push(iterator);
-      }
-    }
-
-    return newCountryList;
+    return countries;
   };
 
   render() {

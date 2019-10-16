@@ -1,6 +1,7 @@
 const initialState = {
   countries: [],
-  notes2: 'sample',
+  leagues: [],
+  season: 2019,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -9,6 +10,11 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         countries: action.payload,
+      };
+    case 'ADD_LEAGUES':
+      return {
+        ...state,
+        leagues: action.payload,
       };
 
     default:

@@ -4,20 +4,23 @@
 @import './components/header/Header.scss';
 @import './components/footer/Footer.scss';
 @import './components/countrylist/countrylink/CountryLink.scss';
+@import './components/leaguelist/leaguelink/LeagueLink.scss';
 
 html {
   height: 100%;
 }
 
-body {
+body,
+html {
   background: #000 url('assets/images/backgorund.jpg') no-repeat center center /
     cover;
+  background-attachment: fixed;
   min-height: 100%;
-  overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
 .o-football-app {
   position: relative;
+  padding-bottom: 200px;
   min-height: 100vh;
 }

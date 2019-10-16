@@ -1,17 +1,24 @@
-.c-country-list {
+.c-league-list {
   margin-top: 100px;
 }
 
-.c-country-link {
+.c-league-link {
   margin-bottom: 30px;
+
+  &__item {
+    width: 100%;
+    text-align: center;
+  }
 
   &__link,
   &__link:hover {
+    padding: 20px;
     position: relative;
     top: 0;
     transition: all 250ms ease-in-out;
     color: #bd8e00;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background: #fff;
@@ -62,11 +69,29 @@
     top: -10px;
   }
 
-  &__img {
-    margin-right: 15px;
-    width: 40px;
-    border-radius: 5px;
+  &__img-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
     border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 20px;
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
   }
 
   &__name {
