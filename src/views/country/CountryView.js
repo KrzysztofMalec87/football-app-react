@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LeagueList from '../../components/leaguelist/LeagueList';
+import LeagueList from '../../components/league/leaguelist/LeagueList';
 
 const CountryView = props => {
   const {

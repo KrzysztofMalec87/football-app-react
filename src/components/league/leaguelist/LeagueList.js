@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import LeagueLink from './leaguelink/LeagueLink';
-import FadeInTop from '../../common/animations/FadeInTop';
-import fetchApi from '../../common/apiconnections';
-import { addLeagues } from '../../actions';
+import LeagueLink from '../leaguelink/LeagueLink';
+import FadeInTop from '../../../common/animations/FadeInTop';
+import fetchApi from '../../../common/apiconnections';
+import { addLeagues } from '../../../actions';
+import { ALLOWED_LEAGUES } from '../../../common/constants';
 
 class LeagueList extends Component {
   state = {
@@ -17,9 +18,7 @@ class LeagueList extends Component {
     const fetchLink = `${process.env.REACT_APP_API_URL_LEAGUES}/${countryId}/${season}`;
 
     fetchApi(fetchLink).then(respond => {
-      const {
-        api: { leagues },
-      } = respond;
+      const leagues = this.filterLeagueOnly(respond);
 
       addLeaguesToState(leagues);
 
@@ -29,13 +28,21 @@ class LeagueList extends Component {
     });
   }
 
+  filterLeagueOnly = ({ api }) => {
+    let { leagues } = api;
+
+    leagues = leagues.filter(value => value.type === ALLOWED_LEAGUES);
+
+    return leagues;
+  };
+
   render() {
     const { leagues } = this.props;
     const { active } = this.state;
 
     return (
       <FadeInTop
-        animationDelay={400}
+        animationDelay={100}
         className="container c-league-list"
         pose={active ? 'visible' : 'hidden'}
       >

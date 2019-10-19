@@ -17,7 +17,7 @@
     "camelcase": [
       "error",
       {
-          "ignoreDestructuring": true
+        "ignoreDestructuring": true
       }
     ],
     "import/prefer-default-export": 0,

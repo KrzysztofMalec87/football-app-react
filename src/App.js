@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import RootView from './views/root/RootView';
 import CountryView from './views/country/CountryView';
+import LeagueView from './views/league/LeagueView';
 
 const App = () => (
   <Provider store={store}>
@@ -15,6 +16,7 @@ const App = () => (
         <Header />
         <Route component={RootView} exact path="/" />
         <Route component={CountryView} exact path="/country/:id" />
+        <Route component={LeagueView} exact path="/league/:id" />
         <Footer />
       </>
     </BrowserRouter>

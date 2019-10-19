@@ -1,6 +1,8 @@
 const initialState = {
   countries: [],
   leagues: [],
+  leagueStanding: [],
+  leagueId: null,
   season: 2019,
 };
 
@@ -15,6 +17,16 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         leagues: action.payload,
+      };
+    case 'ADD_LEAGUE_ID':
+      return {
+        ...state,
+        leagueId: action.payload,
+      };
+    case 'ADD_LEAGUE_STANDING':
+      return {
+        ...state,
+        leagueStanding: action.payload,
       };
 
     default:

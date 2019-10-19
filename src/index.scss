@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
 @import './components/player/Player.scss';
 @import './components/ball/Ball.scss';
 @import './components/header/Header.scss';
 @import './components/footer/Footer.scss';
 @import './components/countrylist/countrylink/CountryLink.scss';
-@import './components/leaguelist/leaguelink/LeagueLink.scss';
+@import './components/league/leaguelink/LeagueLink.scss';
+@import './components/league/leaguelist/LeagueList.scss';
+@import './components/league/leaguestanging/LeagueStanding.scss';
+
+@import './views/league/LeagueView.scss';
 
 html {
   height: 100%;
@@ -16,7 +20,7 @@ html {
     cover;
   background-attachment: fixed;
   min-height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .o-football-app {

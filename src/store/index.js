@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import notesApp from '../reducers';
+import footballApp from '../reducers';
 
-const store = createStore(notesApp);
+const store = createStore(footballApp);
 
 export default store;
