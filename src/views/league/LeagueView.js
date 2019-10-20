@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { addLeagueId } from '../../actions';
 import FadeInTop from '../../common/animations/FadeInTop';
 import LeagueStanding from '../../components/league/leaguestanging/LeagueStanding';
+import LeagueDetails from '../../components/league/leaguedetails/LeagueDetails';
 
 class LeagueView extends Component {
   state = {
@@ -43,10 +44,14 @@ class LeagueView extends Component {
         className="container"
         pose={active ? 'visible' : 'hidden'}
       >
-        <div className="row c-league">
-          <div className="col-7">content</div>
-          <div className="col-5">
-            <LeagueStanding />
+        <div className="c-league">
+          <div className="row">
+            <div className="col-lg-7">
+              <LeagueDetails />
+            </div>
+            <div className="col-lg-5">
+              <LeagueStanding />
+            </div>
           </div>
         </div>
       </FadeInTop>

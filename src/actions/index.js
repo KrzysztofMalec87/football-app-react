@@ -17,3 +17,8 @@ export const addLeagueStanding = leagueStanding => ({
   type: 'ADD_LEAGUE_STANDING',
   payload: leagueStanding,
 });
+
+export const addLeagueDetails = leagueDetails => ({
+  type: 'ADD_LEAGUE_DETAILS',
+  payload: leagueDetails,
+});

@@ -2,6 +2,7 @@ const initialState = {
   countries: [],
   leagues: [],
   leagueStanding: [],
+  leagueInfo: [],
   leagueId: null,
   season: 2019,
 };
@@ -27,6 +28,11 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         leagueStanding: action.payload,
+      };
+    case 'ADD_LEAGUE_DETAILS':
+      return {
+        ...state,
+        leagueInfo: action.payload,
       };
 
     default:
