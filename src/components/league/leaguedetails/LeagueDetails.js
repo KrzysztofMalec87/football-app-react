@@ -50,7 +50,6 @@ class LeagueDetails extends Component {
       },
     } = this.props;
     const leagueLogo = logo || Placeholder;
-    console.log(leagueInfo);
 
     return (
       <div>
