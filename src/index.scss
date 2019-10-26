@@ -14,11 +14,16 @@ html {
 
 body,
 html {
-  background: #000 url('assets/images/backgorund.jpg') no-repeat center center /
-    cover;
-  background-attachment: fixed;
   min-height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
+  background-position: center center;
+  background-image: url('assets/images/grass_pattern.jpg');
+  @media (min-width: 992px) {
+    background-attachment: fixed;
+    background-image: url('assets/images/backgorund.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .o-football-app {
