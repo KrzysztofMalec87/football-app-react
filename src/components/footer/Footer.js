@@ -23,7 +23,16 @@ class Footer extends Component {
         <div className="c-footer__item">
           App created by <strong>Krzysztof Malec</strong>
         </div>
-        <div className="c-footer__item"> www.krzysztofmalec.com</div>
+        <div className="c-footer__item">
+          <a
+            href="http://www.krzysztofmalec.com/"
+            className="c-footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.krzysztofmalec.com
+          </a>
+        </div>
       </FadeInTop>
     );
   }
