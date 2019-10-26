@@ -1,5 +1,15 @@
 .c-ball {
+  display: none;
   position: absolute;
-  bottom: 350px;
-  left: 36%;
+  bottom: 263px;
+  left: 46%;
+  width: 44px;
+  @media (min-width: 992px) {
+    display: block;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
 }

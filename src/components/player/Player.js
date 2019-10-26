@@ -21,7 +21,11 @@ class Player extends Component {
         className="c-player"
         pose={active ? 'visible' : 'hidden'}
       >
-        <img src={PlayerImage} alt="Pro Futball App playes" />
+        <img
+          alt="Pro Futball App playes"
+          className="c-player__img"
+          src={PlayerImage}
+        />
       </SlideFromRight>
     );
   }

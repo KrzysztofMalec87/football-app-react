@@ -21,7 +21,11 @@ class Ball extends Component {
         className="c-ball"
         pose={active ? 'visible' : 'hidden'}
       >
-        <img src={BallImage} alt="Pro Futball App ball" />
+        <img
+          alt="Pro Futball App ball"
+          className="c-ball__img"
+          src={BallImage}
+        />
       </SlideFromLeft>
     );
   }

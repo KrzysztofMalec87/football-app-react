@@ -1,5 +1,15 @@
 .c-player {
+  display: none;
+  width: 400px;
   position: absolute;
-  bottom: 60px;
-  right: 20%;
+  bottom: 100px;
+  right: 30%;
+  @media (min-width: 992px) {
+    display: block;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
 }
