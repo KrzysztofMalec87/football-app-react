@@ -6,11 +6,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    text-align: center;
     margin-bottom: 7px;
     padding-bottom: 7px;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1 );
     color: #a9a9a9;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
 
     &:first-of-type,
     &:last-of-type {
@@ -22,68 +22,47 @@
     display: block;
     width: 30px;
     margin-right: 10px;
+    border: 2px solid rgba( 0, 0, 0, 0.1 );
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
   }
 
   &__name {
+    margin-bottom: 0;
     color: #bd8e00;
+    font-weight: 700;
     font-size: 23px;
+    line-height: 1;
+    text-transform: uppercase;
   }
 
   &__link,
   &__link:hover {
-    padding: 20px;
     position: relative;
     top: 0;
-    transition: all 250ms ease-in-out;
-    color: #bd8e00;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    border-radius: 10px;
     width: 100%;
     min-height: 80px;
-    text-decoration: none;
+    padding: 20px;
     border: 1px solid #e6e3e6;
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 227, 230, 1) 100%
-    );
-    background: -webkit-gradient(
-      left top,
-      left bottom,
-      color-stop(0%, rgba(255, 255, 255, 1)),
-      color-stop(100%, rgba(230, 227, 230, 1))
-    );
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 227, 230, 1) 100%
-    );
-    background: -o-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 227, 230, 1) 100%
-    );
-    background: -ms-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 227, 230, 1) 100%
-    );
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 227, 230, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e3e6', GradientType=0 );
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #bd8e00;
+    text-decoration: none;
+    background: #fff;
+    background: rgba( 255, 255, 255, 1 );
+    background: -moz-linear-gradient( top, rgba( 255, 255, 255, 1 ) 0%, rgba( 230, 227, 230, 1 ) 100% );
+    background: -webkit-gradient( left top, left bottom, color-stop( 0%, rgba( 255, 255, 255, 1 ) ), color-stop( 100%, rgba( 230, 227, 230, 1 ) ) );
+    background: -webkit-linear-gradient( top, rgba( 255, 255, 255, 1 ) 0%, rgba( 230, 227, 230, 1 ) 100% );
+    background: -o-linear-gradient( top, rgba( 255, 255, 255, 1 ) 0%, rgba( 230, 227, 230, 1 ) 100% );
+    background: -ms-linear-gradient( top, rgba( 255, 255, 255, 1 ) 0%, rgba( 230, 227, 230, 1 ) 100% );
+    background: linear-gradient( to bottom, rgba( 255, 255, 255, 1 ) 0%, rgba( 230, 227, 230, 1 ) 100% );
+    -webkit-box-shadow: 0 0 5px 0 rgba( 0, 0, 0, 0.3 );
+    -moz-box-shadow: 0 0 5px 0 rgba( 0, 0, 0, 0.3 );
+    box-shadow: 0 0 5px 0 rgba( 0, 0, 0, 0.3 );
+    filter: progid:dximagetransform.microsoft.gradient( startColorstr="#ffffff", endColorstr="#e6e3e6", GradientType=0 );
+    transition: all 250ms ease-in-out;
   }
 
   &__link:hover {
@@ -91,34 +70,28 @@
   }
 
   &__img-container {
-    display: inline-block;
     position: relative;
-    overflow: hidden;
+    display: inline-block;
     width: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background: #fff;
     margin-bottom: 20px;
+    border: 2px solid rgba( 0, 0, 0, 0.1 );
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+
     &::after {
-      content: '';
       display: block;
       padding-bottom: 100%;
+      content: "";
     }
   }
 
   &__img {
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
+    display: block;
     width: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__name {
-    margin-bottom: 0;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
+    transform: translate( -50%, -50% );
   }
 }

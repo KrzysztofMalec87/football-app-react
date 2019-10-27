@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-standard",
+  	"plugins": [
+		"stylelint-order",
+    "stylelint-config-rational-order/plugin"
+	],
+  "rules": {
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true,
+      "empty-line-between-groups": true,
+    }],
+        "string-no-newline": null,
+    "value-list-max-empty-lines": 0,
+    "string-quotes": "double",
+    "function-comma-newline-after": "never-multi-line",
+    "function-comma-newline-before": "never-multi-line",
+    "function-parentheses-space-inside" : "always", 
+    "value-list-comma-newline-after" : "never-multi-line", 
+    "value-list-comma-newline-before" : "never-multi-line", 
+    "custom-property-empty-line-before" : "never", 
+    "selector-attribute-brackets-space-inside" : "always", 
+    "selector-attribute-quotes" : "always", 
+
+  }
+
+}

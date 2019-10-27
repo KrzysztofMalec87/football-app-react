@@ -1,22 +1,22 @@
 .c-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100px;
   color: #fff;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
   font-size: 14px;
-  box-shadow: 0px -13px 0px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: rgba( 0, 0, 0, 0.3 );
+  box-shadow: 0 -13px 0 0 rgba( 0, 0, 0, 0.2 );
 
   &__link,
   &__link:hover {
+    color: #fff;
     text-decoration: none;
-    color: #ffffff;
   }
 }

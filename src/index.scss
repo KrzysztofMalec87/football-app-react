@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
-@import './components/player/Player.scss';
-@import './components/ball/Ball.scss';
-@import './components/header/Header.scss';
-@import './components/footer/Footer.scss';
-@import './components/countrylist/countrylink/CountryLink.scss';
-@import './components/league/league.scss';
-
-@import './views/league/LeagueView.scss';
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
+@import "./components/player/Player.scss";
+@import "./components/ball/Ball.scss";
+@import "./components/header/Header.scss";
+@import "./components/footer/Footer.scss";
+@import "./components/countrylist/countrylink/CountryLink.scss";
+@import "./components/league/league.scss";
+@import "./views/league/LeagueView.scss";
 
 html {
   height: 100%;
@@ -15,19 +14,20 @@ html {
 body,
 html {
   min-height: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url( "assets/images/grass_pattern.jpg" );
   background-position: center center;
-  background-image: url('assets/images/grass_pattern.jpg');
+
   @media (min-width: 992px) {
-    background-attachment: fixed;
-    background-image: url('assets/images/backgorund.jpg');
+    background-image: url( "assets/images/backgorund.jpg" );
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 
 .o-football-app {
   position: relative;
-  padding-bottom: 200px;
   min-height: 100vh;
+  padding-bottom: 200px;
 }

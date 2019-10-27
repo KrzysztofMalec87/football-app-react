@@ -1,9 +1,21 @@
 .c-ball {
-  display: none;
   position: absolute;
   bottom: 263px;
   left: 46%;
+  display: none;
   width: 44px;
+  padding:
+    "0
+  
+    
+  0
+  
+  
+  0
+  0";
+  background-position: top, center;
+  transform: translate( 50%, 50% );
+
   @media (min-width: 992px) {
     display: block;
   }
