@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "fix:js": "prettier --write \"src/**/*.{js,jsx}\"",
-    "fix:styles": "stylelint \"src/**/*.scss\" --fix",
+    "fix:styles": "stylelint \"src/**/*.scss\" --fix & stylelint \"src/**/*.scss\" --fix",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },

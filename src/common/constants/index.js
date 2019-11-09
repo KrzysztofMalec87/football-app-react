@@ -1,5 +1,5 @@
 export const ALLOWED_COUNTRIES = [
-  'Belgium',
+  'Italy',
   'England',
   'France',
   'Germany',
